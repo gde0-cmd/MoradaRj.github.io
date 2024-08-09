@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    position: fixed; /* Fixa o header no topo da página */
+    top: 0; /* Alinha o header ao topo */
+    left: 0; /* Alinha o header à esquerda */
+    width: 100%; /* Largura total da página */
+    z-index: 1000; /* Garante que o header esteja acima de outros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil para destaque */
+}
+
+.header-title {
+    padding: 15px;
+    text-align: center;
+}
+
+.header-title h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+ 
+/* perguntas */
+.perguntas {
+    background-color: rgba(2, 6, 211, 0.718);
+    border: 1px solid gray;
+    border-radius: 900px;
+    box-shadow: 0 0 10px rgb(85, 62, 255);
+    flex: 1;
+    min-width: 1300px;
+    max-width: 550px;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+/* catalogo */
+.hero {
+    background-image: url('https://via.placeholder.com/1920x600');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 60px; /* Espaço para o header fixo */
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        max-width: 90%;
+    }
+}
